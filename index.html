@@ -1,0 +1,212 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disability Voices Insights</title>
+<style>
+:root{--bg:#f6f6f4;--surface:#ffffff;--ink:#1d1d1b;--ink2:#555550;--line:#e7e7e7;--accent:#257de0;--track:#e8eef6;--quote:#f1f5fb;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121212;--surface:#191919;--ink:#ececea;--ink2:#a8a8a3;--line:#303030;--accent:#338ced;--track:#26303c;--quote:#1f2630;}}
+:root[data-theme="dark"]{--bg:#121212;--surface:#191919;--ink:#ececea;--ink2:#a8a8a3;--line:#303030;--accent:#338ced;--track:#26303c;--quote:#1f2630;}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 16px 60px}
+header h1{font-size:clamp(1.5rem,3.5vw,2.1rem);margin:0 0 6px;line-height:1.2} header p{margin:0;color:var(--ink2);max-width:760px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 8px} nav a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:999px;font-size:.9rem}
+nav a:hover{border-color:var(--accent)}
+h2{font-size:1.35rem;margin:40px 0 4px} .sub{color:var(--ink2);margin:0 0 16px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.tile .big{font-size:2.3rem;font-weight:700;line-height:1.1} .tile .lbl{color:var(--ink2);font-size:.92rem}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:16px;margin-top:16px}
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0;position:relative}
+.chart figcaption{font-weight:600;margin-bottom:10px}
+.bar-row{display:grid;grid-template-columns:minmax(110px,42%) 1fr 34px;gap:8px;align-items:center;padding:3px 0;border-radius:6px;outline:none}
+.bar-row:hover,.bar-row:focus{background:var(--track)}
+.bl{font-size:.88rem} .bt{height:12px} .bf{display:block;height:12px;background:var(--accent);border-radius:0 4px 4px 0}
+.bv{font-size:.85rem;color:var(--ink2);text-align:right;font-variant-numeric:tabular-nums}
+.note,.base,.caveat{color:var(--ink2);font-size:.82rem;margin:8px 0 0}
+details{margin-top:10px;font-size:.88rem} table{border-collapse:collapse;width:100%;margin-top:6px} td,th{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column}
+.card h3{margin:0 0 8px;font-size:1.08rem}
+.fig{display:flex;align-items:baseline;gap:10px} .num{font-size:2.1rem;font-weight:700;color:var(--ink)} .figlabel{color:var(--ink2);font-size:.92rem}
+.meter{height:8px;background:var(--track);border-radius:4px;margin:6px 0 10px;overflow:hidden} .meter span{display:block;height:100%;background:var(--accent);border-radius:4px}
+.body p{margin:0 0 10px}
+blockquote{margin:8px 0;padding:10px 12px;background:var(--quote);border-left:3px solid var(--accent);border-radius:0 8px 8px 0}
+blockquote p{margin:0;font-style:italic} cite{display:block;color:var(--ink2);font-size:.8rem;font-style:normal;margin-top:4px}
+.card .base{margin-top:auto;padding-top:8px}
+.takeaways{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 20px}
+.takeaways li{margin:10px 0}
+.method{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px;font-size:.92rem;color:var(--ink2)}
+.method b{color:var(--ink)}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--surface);padding:5px 9px;border-radius:6px;font-size:.82rem;opacity:0;transition:opacity .1s;z-index:9}
+.toggle{float:right;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+</style></head><body><div class="wrap">
+<header><button class="toggle" id="theme" type="button">Light / Dark</button>
+<h1>Voices of Youth and Parents with Disability</h1>
+<p>What youth with disability and parents of children with disability told us about their aspirations, the skills they want, the chances they get, the support they need and how schools and colleges can improve. Sources: 1 Million Voices V1 and V2 youth and parent conversations, and the Persona-Wise Consolidated Data sheet (Parent and Youth tabs).</p></header>
+<nav><a href="#who">Who we heard from</a><a href="#youth">Youth insights</a><a href="#parents">Parent insights</a><a href="#takeaways">Key takeaways</a><a href="#method">How this was done</a></nav>
+
+<section id="who"><h2>Who we heard from</h2><p class="sub">Only people who said yes to the disability question are counted here.</p>
+<div class="tiles">
+<div class="tile"><div class="big">89</div><div class="lbl">youth with disability (95 responses; 6 look like repeat submissions and are counted once)</div></div>
+<div class="tile"><div class="big">311</div><div class="lbl">parents of children with disability (318 responses; repeats and 1 respondent with no child removed)</div></div>
+<div class="tile"><div class="big">17</div><div class="lbl">more people mentioned disability without reporting one (3 youth, 14 parents); not included in the insights</div></div>
+</div>
+<div class="two"><figure class="chart"><figcaption>What kind of disability youth reported (89 youth)</figcaption><div class="bar-row" tabindex="0" data-tip="Locomotor/Physical: 23 of 89 (26%)"><span class="bl">Locomotor/Physical</span><span class="bt"><span class="bf" style="width:100.0%"></span></span><span class="bv">23</span></div><div class="bar-row" tabindex="0" data-tip="Not specified: 22 of 89 (25%)"><span class="bl">Not specified</span><span class="bt"><span class="bf" style="width:95.7%"></span></span><span class="bv">22</span></div><div class="bar-row" tabindex="0" data-tip="Intellectual: 15 of 89 (17%)"><span class="bl">Intellectual</span><span class="bt"><span class="bf" style="width:65.2%"></span></span><span class="bv">15</span></div><div class="bar-row" tabindex="0" data-tip="Mental/Behavioural: 13 of 89 (15%)"><span class="bl">Mental/Behavioural</span><span class="bt"><span class="bf" style="width:56.5%"></span></span><span class="bv">13</span></div><div class="bar-row" tabindex="0" data-tip="Visual: 11 of 89 (12%)"><span class="bl">Visual</span><span class="bt"><span class="bf" style="width:47.8%"></span></span><span class="bv">11</span></div><div class="bar-row" tabindex="0" data-tip="Learning (dyslexia/ADHD): 4 of 89 (4%)"><span class="bl">Learning (dyslexia/ADHD)</span><span class="bt"><span class="bf" style="width:17.4%"></span></span><span class="bv">4</span></div><div class="bar-row" tabindex="0" data-tip="Hearing: 2 of 89 (2%)"><span class="bl">Hearing</span><span class="bt"><span class="bf" style="width:8.7%"></span></span><span class="bv">2</span></div><div class="bar-row" tabindex="0" data-tip="Chronic illness: 2 of 89 (2%)"><span class="bl">Chronic illness</span><span class="bt"><span class="bf" style="width:8.7%"></span></span><span class="bv">2</span></div>
+<details><summary>Show as table</summary><table><thead><tr><th>Type</th><th>Respondents</th><th>% of 89</th></tr></thead><tbody><tr><td>Locomotor/Physical</td><td>23</td><td>26%</td></tr><tr><td>Not specified</td><td>22</td><td>25%</td></tr><tr><td>Intellectual</td><td>15</td><td>17%</td></tr><tr><td>Mental/Behavioural</td><td>13</td><td>15%</td></tr><tr><td>Visual</td><td>11</td><td>12%</td></tr><tr><td>Learning (dyslexia/ADHD)</td><td>4</td><td>4%</td></tr><tr><td>Hearing</td><td>2</td><td>2%</td></tr><tr><td>Chronic illness</td><td>2</td><td>2%</td></tr></tbody></table></details>
+<p class="note">One person can report more than one type, so the counts can add up to more than 89.</p></figure><figure class="chart"><figcaption>What kind of disability parents reported for their child (311 parents)</figcaption><div class="bar-row" tabindex="0" data-tip="Locomotor/Physical: 142 of 311 (46%)"><span class="bl">Locomotor/Physical</span><span class="bt"><span class="bf" style="width:100.0%"></span></span><span class="bv">142</span></div><div class="bar-row" tabindex="0" data-tip="Not specified: 83 of 311 (27%)"><span class="bl">Not specified</span><span class="bt"><span class="bf" style="width:58.5%"></span></span><span class="bv">83</span></div><div class="bar-row" tabindex="0" data-tip="Intellectual: 30 of 311 (10%)"><span class="bl">Intellectual</span><span class="bt"><span class="bf" style="width:21.1%"></span></span><span class="bv">30</span></div><div class="bar-row" tabindex="0" data-tip="Speech: 24 of 311 (8%)"><span class="bl">Speech</span><span class="bt"><span class="bf" style="width:16.9%"></span></span><span class="bv">24</span></div><div class="bar-row" tabindex="0" data-tip="Visual: 23 of 311 (7%)"><span class="bl">Visual</span><span class="bt"><span class="bf" style="width:16.2%"></span></span><span class="bv">23</span></div><div class="bar-row" tabindex="0" data-tip="Hearing: 12 of 311 (4%)"><span class="bl">Hearing</span><span class="bt"><span class="bf" style="width:8.5%"></span></span><span class="bv">12</span></div><div class="bar-row" tabindex="0" data-tip="Mental/Behavioural: 4 of 311 (1%)"><span class="bl">Mental/Behavioural</span><span class="bt"><span class="bf" style="width:2.8%"></span></span><span class="bv">4</span></div><div class="bar-row" tabindex="0" data-tip="Chronic illness: 2 of 311 (1%)"><span class="bl">Chronic illness</span><span class="bt"><span class="bf" style="width:1.4%"></span></span><span class="bv">2</span></div><div class="bar-row" tabindex="0" data-tip="Learning (dyslexia/ADHD): 1 of 311 (0%)"><span class="bl">Learning (dyslexia/ADHD)</span><span class="bt"><span class="bf" style="width:0.7%"></span></span><span class="bv">1</span></div>
+<details><summary>Show as table</summary><table><thead><tr><th>Type</th><th>Respondents</th><th>% of 311</th></tr></thead><tbody><tr><td>Locomotor/Physical</td><td>142</td><td>46%</td></tr><tr><td>Not specified</td><td>83</td><td>27%</td></tr><tr><td>Intellectual</td><td>30</td><td>10%</td></tr><tr><td>Speech</td><td>24</td><td>8%</td></tr><tr><td>Visual</td><td>23</td><td>7%</td></tr><tr><td>Hearing</td><td>12</td><td>4%</td></tr><tr><td>Mental/Behavioural</td><td>4</td><td>1%</td></tr><tr><td>Chronic illness</td><td>2</td><td>1%</td></tr><tr><td>Learning (dyslexia/ADHD)</td><td>1</td><td>0%</td></tr></tbody></table></details>
+<p class="note">One person can report more than one type, so the counts can add up to more than 311.</p></figure></div>
+</section>
+
+<section id="youth"><h2>What youth with disability are saying</h2><p class="sub">89 youth. Percentages are of those who answered each question.</p>
+<div class="cards"><article class="card">
+  <h3>Aspirations: clear and ambitious</h3>
+  <div class="fig"><span class="num">83%</span><span class="figlabel">name a specific career</span></div>
+  <div class="meter" role="img" aria-label="name a specific career: 83%"><span style="width:83%"></span></div>
+  <div class="body"><p>Most youth with disability name a concrete job, not just “a good job”. The most common goals are
+         <b>civil services, police or defence (25%)</b>,
+         <b>teaching (23%)</b>, <b>engineering or IT (20%)</b>
+         and <b>business (12%)</b>. Disability does not appear to narrow what they aim for.
+         Many link the career to helping others or supporting their parents.</p>
+         <p>For lifestyle, the most common wish is a <b>simple, peaceful life (36%)</b>.
+         14% name independence directly, for example an own house or living without depending on others.</p></div>
+  <blockquote><p>“My goal is police because I want government job and helping to people”</p><cite>Youth, aspiration</cite></blockquote><blockquote><p>“I want to live in a independent own house with proper care security everything”</p><cite>Youth, lifestyle</cite></blockquote>
+  <p class="base">Base: 77 of 89 respondents answered this question</p>
+</article><article class="card">
+  <h3>Confidence is high, but not universal</h3>
+  <div class="fig"><span class="num">60%</span><span class="figlabel">feel very confident</span></div>
+  <div class="meter" role="img" aria-label="feel very confident: 60%"><span style="width:60%"></span></div>
+  <div class="body"><p>60% feel very confident about reaching their goal and 22% feel somewhat confident.
+         The <b>18% who are unsure</b> mention fear of failure, self-doubt or that the outcome is “God's will”.</p></div>
+  <blockquote><p>“we don&#x27;t know where our future or goals belong even though we want to be someone if it&#x27;s not God&#x27;s will we can&#x27;t achieve it.”</p><cite>Youth, confidence</cite></blockquote>
+  <p class="base">Base: 88 of 89 respondents answered this question</p>
+</article><article class="card">
+  <h3>Skills they want: communication first</h3>
+  <div class="fig"><span class="num">53%</span><span class="figlabel">want communication / English skills</span></div>
+  <div class="meter" role="img" aria-label="want communication / English skills: 53%"><span style="width:53%"></span></div>
+  <div class="body"><p>The skill named most often is <b>communication, especially spoken English (53%)</b>.
+         Next come <b>confidence and soft skills (31%)</b>,
+         subject or technical knowledge (25%) and digital or computer skills (23%).
+         These are mostly skills for presenting themselves and being heard, more than technical ones.</p></div>
+  <blockquote><p>“Fluent English, proper communication with others”</p><cite>Youth, skills needed</cite></blockquote>
+  <p class="base">Base: 75 of 89 respondents answered this question</p>
+</article><article class="card">
+  <h3>Opportunity gap: half are not getting the chance</h3>
+  <div class="fig"><span class="num">49%</span><span class="figlabel">get few or no chances to learn these skills</span></div>
+  <div class="meter" role="img" aria-label="get few or no chances to learn these skills: 49%"><span style="width:49%"></span></div>
+  <div class="body"><p>About half say they have good opportunities to learn the skills they need (51%).
+         The other half get <b>only a few chances (19%)</b> or <b>none at all (30%)</b>.
+         Those who are learning do it in school or college (39%), on their own (33%)
+         or online (30%) (base: 46 who described how).</p></div>
+  <blockquote><p>“No I&#x27;m able to study law because of financial problem Butt after my degree i will do it”</p><cite>Youth, opportunity to learn</cite></blockquote>
+  <p class="base">Base: 84 of 89 respondents answered this question</p>
+</article><article class="card">
+  <h3>Barriers: money first, then self-doubt</h3>
+  <div class="fig"><span class="num">37%</span><span class="figlabel">name money as a barrier</span></div>
+  <div class="meter" role="img" aria-label="name money as a barrier: 37%"><span style="width:37%"></span></div>
+  <div class="body"><p>The biggest barrier they expect is <b>money (37%)</b>. Next come <b>fear, self-doubt and low confidence
+         (15%)</b>, competition and exams (10%), and family responsibilities (7%).
+         Only 8% name a disability-specific barrier.
+         When they do, it is concrete: material a screen reader cannot read, graphs with no description, or travelling alone with low vision.</p></div>
+  <blockquote><p>“As a blind person i struggle with courses that have content that is inaccessable with a screenreader and images such as graphs that arn&#x27;t described.”</p><cite>Youth with visual impairment, challenges</cite></blockquote><blockquote><p>“Logo ki tohmat lgana bina wajah ka , class me sabse gareeb aur kamzor dikhaya jana”</p><cite>Youth, challenges</cite></blockquote>
+  <p class="base">Base: 60 of 89 respondents answered this question</p>
+</article><article class="card">
+  <h3>Support they need: money, guidance, accessible tools</h3>
+  <div class="fig"><span class="num">69%</span><span class="figlabel">need financial support or scholarships</span></div>
+  <div class="meter" role="img" aria-label="need financial support or scholarships: 69%"><span style="width:69%"></span></div>
+  <div class="body"><p>Among youth who said what support they need, <b>financial help or scholarships (69%)</b> comes first.
+         Next are <b>career guidance and mentoring (15%)</b> and <b>accessible materials and infrastructure (13%)</b>.
+         Several want acceptance as much as aid: being treated “as a person”, not pitied.</p>
+         <p class="caveat">This is a small base. Where a youth named money as a barrier, it was also counted as a need for financial support.</p></div>
+  <blockquote><p>“we are not getting much more sources or accessible tools or anything to we are dependent to sighted people so this should be change”</p><cite>Youth with visual impairment, what should change</cite></blockquote><blockquote><p>“I would like to create a supportive environment where students facing personal or mentally challenges get proper guidance emotional support and counselling so they don&#x27;t feel alone”</p><cite>Youth, final thought</cite></blockquote>
+  <p class="base">Base: 39 of 89 respondents answered this question</p>
+</article><article class="card">
+  <h3>How schools and colleges should improve</h3>
+  <div class="fig"><span class="num">19%</span><span class="figlabel">want practical, skill-based learning</span></div>
+  <div class="meter" role="img" aria-label="want practical, skill-based learning: 19%"><span style="width:19%"></span></div>
+  <div class="body"><p>The top ask is <b>more practical, skill-based learning (19%)</b>, followed by
+         <b>better teaching (15%)</b>, labs and technology (11%), sports and activities (10%)
+         and less exam pressure (8%). 7% ask for accessibility and inclusion,
+         such as disabled-friendly labs, trained staff and digital study material. 17% would change nothing.</p></div>
+  <blockquote><p>“it needs to have disabled friendly labs and trained staff”</p><cite>Youth, school change</cite></blockquote><blockquote><p>“Understand my difference and accept me as they are as I am and understand my capabilities Spelling is not a defining metrics for knowledge”</p><cite>Youth with dyslexia, school change</cite></blockquote>
+  <p class="base">Base: 72 of 89 respondents answered this question</p>
+</article></div></section>
+
+<section id="parents"><h2>What parents of children with disability are saying</h2><p class="sub">311 parents. Percentages are of those who answered each question.</p>
+<div class="cards"><article class="card">
+  <h3>Most children are in school; a few are kept out by disability</h3>
+  <div class="fig"><span class="num">97%</span><span class="figlabel">of children are in school or college</span></div>
+  <div class="meter" role="img" aria-label="of children are in school or college: 97%"><span style="width:97%"></span></div>
+  <div class="body"><p>Nearly all parents describe a child who attends school. The exceptions are stark: in 6 families the child is out of school
+         <b>because of the disability</b>. In one, a teacher said the child should now “do it at home”. Others go only sometimes because walking is hard.</p>
+         <p class="caveat">Where a parent only named the school type, the child was counted as in school, so this share may be slightly high.</p></div>
+  <blockquote><p>“due to the disability, the teacher at this government school says that now the child will do it at home.”</p><cite>Parent, hopes for child</cite></blockquote><blockquote><p>“Children sometimes stay in school but don&#x27;t study as much because they have difficulty walking, they are disabled, so they sometimes go but don&#x27;t study properly.”</p><cite>Parent, satisfaction</cite></blockquote>
+  <p class="base">Base: 302 of 311 respondents answered this question</p>
+</article><article class="card">
+  <h3>Satisfaction: mostly positive, complaints are about teaching</h3>
+  <div class="fig"><span class="num">69%</span><span class="figlabel">are satisfied with their child’s learning</span></div>
+  <div class="meter" role="img" aria-label="are satisfied with their child’s learning: 69%"><span style="width:69%"></span></div>
+  <div class="body"><p>69% are satisfied, usually because “the child is learning well”. The <b>31% who are dissatisfied or mixed</b>
+         rarely blame the disability (7 parents). They blame <b>poor teaching</b>: teachers absent, late, or on their phones
+         in class, and no attention to the weaker child.</p></div>
+  <blockquote><p>“Because teachers don&#x27;t come to government schools on time, and there&#x27;s no teaching. During teaching time, the teachers keep using their mobile phones.”</p><cite>Parent, satisfaction</cite></blockquote><blockquote><p>“They may have the teaching qualification but they lack the skills to tackle the different types of children with different learning capabilities”</p><cite>Parent of a child with ADHD, satisfaction</cite></blockquote>
+  <p class="base">Base: 279 of 311 respondents answered this question</p>
+</article><article class="card">
+  <h3>Hopes: a good, independent life and a job</h3>
+  <div class="fig"><span class="num">69%</span><span class="figlabel">hope for a happy, good life</span></div>
+  <div class="meter" role="img" aria-label="hope for a happy, good life: 69%"><span style="width:69%"></span></div>
+  <div class="body"><p>Parents’ hopes are mainstream, not lowered: a <b>happy, good life (69%)</b>, a <b>good job (43%)</b>,
+         often a <b>government job (23%)</b>, and finishing education (16%).
+         A recurring idea is dignity through independence: a child who will “stand on their own feet” and “not have to bow down to anyone”.</p></div>
+  <blockquote><p>“we want them to study and get a very good job, and educate their children in private schools, and not have to bow down to anyone.”</p><cite>Parent, hopes for child</cite></blockquote><blockquote><p>“We want them to be able to stand on their own feet, live a good life, and build a good future.”</p><cite>Parent, hopes for child</cite></blockquote>
+  <p class="base">Base: 294 of 311 respondents answered this question</p>
+</article><article class="card">
+  <h3>What parents do now: home study, tuition and sacrifice</h3>
+  <div class="fig"><span class="num">52%</span><span class="figlabel">help the child study at home</span></div>
+  <div class="meter" role="img" aria-label="help the child study at home: 52%"><span style="width:52%"></span></div>
+  <div class="body"><p>Support is mostly hands-on and paid from tight budgets: <b>helping with homework and checking notebooks (52%)</b>,
+         encouragement (27%), sending the child to school regularly (22%),
+         tuition (21%) and paying for fees and materials (20%).
+         Some borrow money or sell milk to pay for school. 7% say they cannot help at all.
+         Only 4 parent mentions working on a disability certificate or scheme, and only 3 mentions therapy.</p></div>
+  <blockquote><p>“By keeping a buffalo, we sell milk and educate our child with the same employment.”</p><cite>Parent, current support</cite></blockquote><blockquote><p>“I don&#x27;t have any money, nothing to help. Whatever Madam ji teaches in school, that&#x27;s it.”</p><cite>Parent, current support</cite></blockquote>
+  <p class="base">Base: 282 of 311 respondents answered this question</p>
+</article><article class="card">
+  <h3>What should change in schools: teaching quality, then basics</h3>
+  <div class="fig"><span class="num">40%</span><span class="figlabel">want better teaching</span></div>
+  <div class="meter" role="img" aria-label="want better teaching: 40%"><span style="width:40%"></span></div>
+  <div class="body"><p>The top ask is <b>better teaching (40%)</b>. Next are computers, labs and libraries (12%),
+         practical learning (9%), personal attention to the child (8%) and basic amenities
+         such as toilets, water, seating and meals (8%). Disability-specific asks are rare but pointed, for example a school with proper facilities in every block.</p></div>
+  <blockquote><p>“There should be at least one school in each block with proper facilities for the education of children with disabilities.”</p><cite>Parent, school change</cite></blockquote><blockquote><p>“Teachers should allow weaker students to sit in front of them and not discriminate against them, so that the student can study and not be harassed.”</p><cite>Parent of a child with an eye problem, school change</cite></blockquote>
+  <p class="base">Base: 275 of 311 respondents answered this question</p>
+</article></div>
+<div class="two"><article class="card"><h3>What a few parents ask the government for</h3>
+<div class="body"><p>Only <b>12 parents</b> made a direct ask of the government or school about disability: government schemes (7), disability certificate/udid (3), special school/educator (2), other: govt support for education (1), transport/mobility aid (1), financial help/pension (1).
+Their stories show how systems fail them: a certificate never issued, a ₹1,100 monthly pension that does not arrive, and repeated visits to offices.</p></div>
+<blockquote><p>“I&#x27;m just tired of how many times I&#x27;ve been blocked, and I can&#x27;t even get a disability certificate made. I&#x27;ve been sent here and there.”</p><cite>Parent, current support</cite></blockquote><blockquote><p>“for those who have more than 40%, the government is not giving ₹1100 per month, nor is there a certificate for those who have it made.”</p><cite>Parent, type of disability</cite></blockquote></article></div>
+</section>
+
+<section id="takeaways"><h2>Key takeaways</h2><ol class="takeaways">
+<li><b>Ambition is not the gap; opportunity is.</b> 83% of youth with disability name a specific career and 60% feel very confident, yet 49% get few or no chances to build the skills they need.</li>
+<li><b>Money is the main barrier for both groups.</b> 37% of youth name finances as a barrier, and parents describe borrowing, selling milk or doing labour to pay for school and tuition.</li>
+<li><b>Communication and confidence are the skills youth want most</b> (communication/English 53%, confidence and soft skills 31%). This points to a need to be heard and seen as capable.</li>
+<li><b>Parents' complaints are about teaching, not disability.</b> Dissatisfied parents describe absent or distracted teachers and no attention to the weaker child. Better teaching is the top ask (40%).</li>
+<li><b>Disability-specific needs are rarely voiced, but sharp when they are.</b> Only 10 youth and 14 parents talk about disability beyond the screening question. Those who do describe concrete gaps: screen-reader-inaccessible content, no trained staff, a child turned away from school, or a certificate and pension that never arrive. <i>Inference:</i> this may reflect low awareness of entitlements, or that the conversations did not probe disability-specific needs.</li>
+<li><b>Hopes are for dignity and independence.</b> Both youth and parents want a life where the young person is self-reliant: “stand on their own feet”, “not dependent on sighted people”, “not have to bow down to anyone”.</li>
+</ol></section>
+
+<section id="method"><h2>How this was done</h2><div class="method">
+<p><b>Who is included.</b> Responses from V1 and V2 (Main and Others files) and from the Persona-Wise Consolidated Data sheet where the person said yes to the disability question or described a disability. Answers in V1 and V2 are voice transcripts, so every non-“No” answer was checked by hand. “Prefer not to say” is not included. V1 parents were not asked the question.</p>
+<p><b>Repeats.</b> Groups of responses with the same profile and near-identical answers (6 youth and 6 parent entries) are counted once.</p>
+<p><b>Coding.</b> AI agents read every response in full and tagged each one against a fixed set of themes for each question. Every quote was checked word for word against the original response. Percentages are calculated from these tags, with “not stated” left out of each base.</p>
+<p><b>Limits.</b> Many answers are short or garbled voice-to-text (13% of youth and 9% of parent responses are largely unclear). 27% of parents and 25% of youth said “yes” without naming the type. Small bases, such as support needed (youth) and asks of government (parents), are directional only. V1 and V2 youth sources, and the parent sources, used somewhat different questions; each percentage uses only the people who were asked and answered.</p>
+</div></section>
+</div><div id="tip" role="tooltip"></div>
+<script>
+(function(){var tip=document.getElementById('tip');
+document.querySelectorAll('.bar-row').forEach(function(r){
+ function show(e){tip.textContent=r.dataset.tip;tip.style.opacity=1;var b=r.getBoundingClientRect();var x=e&&e.clientX?e.clientX:b.left+b.width/2;var y=e&&e.clientY?e.clientY:b.top;tip.style.left=Math.min(x+12,window.innerWidth-tip.offsetWidth-8)+'px';tip.style.top=(y-34)+'px';}
+ r.addEventListener('mousemove',show);r.addEventListener('focus',show);r.addEventListener('mouseleave',function(){tip.style.opacity=0});r.addEventListener('blur',function(){tip.style.opacity=0});});
+var root=document.documentElement;document.getElementById('theme').addEventListener('click',function(){
+ var dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;root.dataset.theme=dark?'light':'dark';});
+})();
+</script></body></html>
